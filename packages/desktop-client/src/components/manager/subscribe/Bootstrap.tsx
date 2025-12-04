@@ -71,21 +71,7 @@ export function Bootstrap() {
     <View style={{ maxWidth: 450 }}>
       <Title text={t('Welcome to Actual!')} />
       <Paragraph style={{ fontSize: 16, color: theme.pageTextDark }}>
-        <Trans>
-          Actual is a super fast privacy-focused app for managing your finances.
-          To secure your data, you’ll need to set a password for your server.
-        </Trans>
-      </Paragraph>
-
-      <Paragraph isLast style={{ fontSize: 16, color: theme.pageTextDark }}>
-        <Trans>
-          Consider opening{' '}
-          <Link variant="external" to="https://actualbudget.org/docs/tour/">
-            our tour
-          </Link>{' '}
-          in a new tab for some guidance on what to do when you’ve set your
-          password.
-        </Trans>
+        <Trans>This version is modified for personal use.</Trans>
       </Paragraph>
 
       {error && (
@@ -101,6 +87,7 @@ export function Bootstrap() {
         </Text>
       )}
 
+      {/*TODO: Remove the demo page*/}
       <ConfirmPasswordForm
         buttons={
           <Button

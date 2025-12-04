@@ -39,7 +39,7 @@ export function ConfirmPasswordForm({
     }
   }
 
-  function onShowPassword(e) {
+  function onShowPassword(e: ChangeEvent<HTMLInputElement>) {
     setShowPassword(e.target.checked);
   }
 

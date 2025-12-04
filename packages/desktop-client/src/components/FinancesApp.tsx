@@ -105,6 +105,7 @@ export function FinancesApp() {
     }, 100);
   }, []);
 
+  /*
   useEffect(() => {
     async function run() {
       await global.Actual.waitForUpdateReadyForDownload(); // This will only resolve when an update is ready
@@ -131,7 +132,9 @@ export function FinancesApp() {
 
     run();
   }, []);
+  */
 
+  /*
   useEffect(() => {
     dispatch(getLatestAppVersion());
   }, [dispatch]);
@@ -181,6 +184,7 @@ export function FinancesApp() {
     t,
     versionInfo,
   ]);
+  */
 
   const scrollableRef = useRef<HTMLDivElement>(null);
 
